@@ -1,0 +1,39 @@
+body {
+    background-color:#000000;
+    color: #ffffff;
+    /* RGB in esadecimale: RR GG BB dove i valori vanno da 00 a FF. */
+
+    /* CAMBIO IL FONT DELLA PAGINA */
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.wrapper {
+    /*imposto un contenitore generale per stringere tutto*/
+    max-width: 980px;
+    margin: auto; /*margine calcolato automaticamente sui lati*/
+}
+
+
+/* SELETTORE TIPO CLASSE */
+
+.info-box {
+    border: 3px solid #d013d0;
+    /*border è la regola "abbreviata" che corrisponde a :*/
+    /* border-width: 3px;
+    border-color: #d013d0;
+    border-style: solid; */
+    background-color: #260654;
+    padding:16px;
+    /* 1 valore solo opera tu tutti e 4 i lati*/
+    /* posso agire sui singoli lati:*/
+    /* padding-top, padding-bottom, padding-left, padding-right; */
+
+    text-align: center;
+    /*allinea il testo al centro. altre possibilità: left (default) o right.*/
+}
+
+a {
+    color: #f1e504;
+}
