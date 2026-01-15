@@ -1,0 +1,43 @@
+.flex-container {
+    display: flex; /* attiva FLEXBOX */
+
+    /*DISPORRE GLI ELEMENTI SUL MAIN-AXIS (Orizzontale)*/
+
+    justify-content: start; /*posiziona gli elementi figli all'inizio del contenitore (default)*/
+    justify-content: end; /*posiziona gli elmenti figli alla FINE del contenitore */
+    justify-content: center; /*posiziona gli elementi figli AL CENTRO */
+    justify-content: space-between; /*posiziona alla massima distanza tra di loro */
+
+
+    justify-content: space-evenly; /*posiziona equidistanti tra di loro */
+    justify-content: space-around; /*posiziona in modo proporzionale */
+}
+
+.flex-element {
+    font-size: 2rem;
+    border:2px solid #27594b;
+    background-color: #83baab;
+}
+
+
+
+.flex-container-vertical {
+    height: 500px; /*imposto un'altezza al contenitore per mostrare l'allineamento in verticale*/
+    background: #dddddd;
+    border:2px dashed #333333;
+    /* NOTA: normalmente non si "forza" un'altezza, ma si lascia che il contenitore si allunghi in verticale
+    in base a quanto testo deve contenere. */
+
+    display: flex;
+    /*Per il cross-axis (verticale) usiamo align-items*/
+    align-items: stretch; /*proprietà di default! Allunga gli elementi in verticale */
+    align-items: start; /*disponi all'inizio del cross-axis (cioè in alto) */
+    align-items: center;
+    align-items: end;
+}
+
+.flex-element-vertical {
+    font-size: 2rem;
+    border: 2px solid #7f2f63;
+    background-color: #b580a2;    
+}
