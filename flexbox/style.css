@@ -1,3 +1,27 @@
+/* -------------------------------------------------------------------------- */
+/*                     RESET "MINIMO" DEL CSS DEL BROWSER                     */
+/* -------------------------------------------------------------------------- */
+
+/*imposto il box model*/
+* { 
+    box-sizing: border-box;
+    /* il selettore * comprende TUTTI gli elementi*/
+}
+
+/*elimino i margini dal body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 REGOLE FLEX                                */
+/* -------------------------------------------------------------------------- */
+
+
+
+
 .flex-container {
     display: flex; /* attiva FLEXBOX */
 
@@ -40,4 +64,67 @@
     font-size: 2rem;
     border: 2px solid #7f2f63;
     background-color: #b580a2;    
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                             FLEX E PERCENTUALI                             */
+/* -------------------------------------------------------------------------- */
+
+.flex-container-percentuali {
+    display:flex;    
+    border:1px solid #ffcc00;
+    /* PER MANDARE A CAPO QUANDO LO SPAZIO FINISCE: */
+     flex-wrap: wrap;
+}
+
+.flex-element-perc {
+    background-color: #ffeb88;
+    border:1px solid #ff6302;
+    padding:2rem;
+    /* 6 per riga:*/
+    /* width:16.666%; */
+
+    /*3 per riga: */
+    /* width: 33.3333%; */
+
+    /*2 per riga */
+    width:50%;
+
+   
+}
+
+
+
+.extra {
+    margin-bottom: 5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  PULSANTE                                  */
+/* -------------------------------------------------------------------------- */
+
+.button {
+    background-color: #7f2f63;
+    color:#ffffff;
+
+    /* 
+    POSSO USARE LE PROPRIETA ESTESE:
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom:0.5rem; */
+   /*OPPURE ABBREVIARE: */ 
+    padding: 0.5rem 2rem; /*primo valore: sopra+sotto | secondo valore: sinistra + destra*/
+
+    /*per padding diversi sui 4 lati: 
+     padding: 1rem 3rem 5rem 7rem;
+     4 valori, a partire da sinistra. */
+
+     /*togliamo il sottolineato*/
+     text-decoration: none;
+
+     border-radius: 20px;
+    
 }
