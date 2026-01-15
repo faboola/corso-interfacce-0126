@@ -1,0 +1,53 @@
+.percentuale {
+    background-color: blueviolet;
+    width: 50%; /*percentuale relativa al GENITORE */
+}
+
+.percentuale-child {
+    background-color: aquamarine;
+    width:50%; /*percentuale relativa al GENITORE */
+}
+
+.viewport-width {
+    background-color: lime;
+    width: 90vw; /* il 90% del viewport | vw si esprime da 1 a 100 */
+}
+
+.viewport-height {
+
+    background-color: crimson;
+    height: 100vh;
+
+}
+
+
+.dimensioni-rem {
+    background-color: rgb(255, 170, 0);
+    width: 10rem; /*1rem = dimensione base font, solitamente 16px*/
+}
+
+.dimensioni-px {
+    background-color: #666666;
+    width:700px;
+}
+
+/* 
+I REM si usano soprattutto per gli elementi legati al testo: dimensione font,
+margini, padding etc */
+
+body {
+    padding:4rem;
+}
+
+h1 {
+    font-size:4rem;
+    margin-bottom:2rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem; /*1rem è la dimensione di default */
+}
