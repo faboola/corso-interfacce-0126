@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 { /*seleziona h1, h2 e h3 */
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 600; /*equivale a bold */
+}
+
+.container {
+    width: 70%; /*larghezza fissa container*/
+    margin: auto; /*centra il container, con margini calcolati in automatico */
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                STILI HEADER                                */
+/* -------------------------------------------------------------------------- */
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-menu ul {
+    /*seleziona solo i tag UL che sono contenuti in .main-menu */
+
+    display: flex; /*tutti gli LI dentro questo UL si affiancano */
+    list-style-type: none; /*non voglio i pallini sulla lista!*/
+    column-gap: 2rem; /*spazio tra gli elementi orizzontali*/
+
+    /* NOTA: gap agisce su entrambi gli assi;
+    column-gap sull'asse orizzontale;
+    row-gap sull'asse verticale */
+}
+
+.main-menu a { 
+    
+    /*gli A dentro l'elemento con classe .main-menu */
+    text-decoration: none; /*elimino la sottolineatura */
+    font-weight: 600; /*spessore 600.*/
+
+
+/*     
+    NOTA: gli spessori devono essere supportati dal font. In questo caso 
+    stiamo usando il font ROBOTO che ha spessori da 100 (sottile) a 900 (ultra bold),
+    ma non tutti i font supportano TUTTI gli spessori da 100 a 900
+    */
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                STILI GALLERY                               */
+/* -------------------------------------------------------------------------- */
+
+.gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap; /*quando finisci lo spazio manda su una nuova riga gli elementi figli*/
+}
+
+.gallery-item {
+    width: 25%;
+}
+
+.gallery-item img { /*tutte le immagini dentro gallery-item*/
+width: 100%;
+height: auto;
+
+/*SE VOGLIO IMPOSTARE INVECE LA DIMENSIONE MASSIMA DELL'IMMAGINE
+devo usare max-width. (es. max-width:100%;) In questo l'immagine non si allargherà mai oltre la sua
+dimensione intrinseca. Es. se un'immagine è grande 500px non si allargherà mai oltre 500px;
+
+A COSA SERVE? A evitare che le immagini sgranino
+*/
+
+}
