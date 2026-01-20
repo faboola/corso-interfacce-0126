@@ -60,11 +60,14 @@ h1, h2, h3 { /*seleziona h1, h2 e h3 */
 
 .gallery-wrapper {
     display: flex;
-    flex-wrap: wrap; /*quando finisci lo spazio manda su una nuova riga gli elementi figli*/
+    flex-wrap: wrap; /*quando finisci lo spazio manda su una nuova riga gli elementi figli*/;
+    margin-left:-0.5rem;
+    margin-right: -0.5rem;
 }
 
 .gallery-item {
     width: 25%;
+    padding:0.5rem;
 }
 
 .gallery-item img { /*tutte le immagini dentro gallery-item*/

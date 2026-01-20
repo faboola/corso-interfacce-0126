@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 { /*seleziona h1, h2 e h3 */
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 600; /*equivale a bold */
+}
+
+.container {
+    width: 70%; /*larghezza fissa container*/
+    margin: auto; /*centra il container, con margini calcolati in automatico */
+}
+
+
+.gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
