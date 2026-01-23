@@ -1,0 +1,43 @@
+/* MINI RESET: */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- STILI CSS ---------- */
+
+
+body {
+    background-color: #271d35;
+    color:#e9daff;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 MEDIA QUERY                                */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width: 768px) {
+ 
+    /*qui sto impostando le regole per i viewport più grandi di 768px*/
+    /* NOTA: 768px è il BREAKPOINT da cui inizia a funzionare la regola */
+
+    body {
+        background-color: #7c0ea1;
+    }
+    
+} /*qui chiudo la media query*/
+
+@media screen and (min-width:1000px) {
+    /*Regole che valgono per viewport più larghi di 1000px  */
+
+    body {
+        color: #87d000;
+    }
+
+}
