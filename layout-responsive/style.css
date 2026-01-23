@@ -61,6 +61,11 @@ img {
 
     .gallery-item {
         width: 25%;
+        
     }
 
 }
+
+/*PER NASCONDERE O MOSTRARE UN ELEMENTO SULLO SCHERMO:*/
+/* display: none  ->nasconde elemento */
+/* display: block oppure display:flex -> mostra elemento */
