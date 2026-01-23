@@ -1,0 +1,66 @@
+/* -------------------------------------------------------------------------- */
+/*              STILI CHE VALGONO PER TUTTE LE DIMENSIONI SCHERMO             */
+/* -------------------------------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto; /*0 margine sopra e sotto, margine auto sui lati per centrare */
+}
+
+.gallery-wrapper {
+    display: flex; /*affianca i figli*/
+    flex-wrap: wrap; /*vai su una nuova riga se esaurisci lo spazio */
+} 
+
+.gallery-item {
+    width: 50%; /*2 per riga */
+    padding:0.5rem; /*i REM supportano anche valori inferiori a 1 */
+}
+
+
+@media screen and (min-width:640px) { /*pseudo-tablet*/
+/*qui posso scrivere regole per schermi intermedi */
+}
+
+@media screen and (min-width:992px) {
+
+    .container {
+        max-width: 1080px; /*questa sovrascrive la regola precedente (riga 21)
+        /*la proprietà margin è ereditata da sopra (riga 22) */
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .servizi-wrapper {
+        display: flex;
+    }
+
+    .servizio-item {
+        width: 33.333%;
+        padding: 1rem;
+    }
+
+    /*GALLERY */
+
+    .gallery-item {
+        width: 25%;
+    }
+
+}
