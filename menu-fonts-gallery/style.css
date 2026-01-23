@@ -82,3 +82,42 @@ A COSA SERVE? A evitare che le immagini sgranino
 */
 
 }
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                SEZIONE NEWS                                */
+/* -------------------------------------------------------------------------- */
+
+.news-item {
+    display: flex;
+}
+
+/* PSEUDOCLASSI */
+
+.news-item:nth-of-type(even) {
+    /*selezona soltanto le istanze DISPARI dell'elemento */
+    /* posso agire sulle proprietà dell'elelmento pari es. background-color: red;*/
+}
+
+.news-item:nth-of-type(even) .news-image {
+    /*tutti gli elementi .news-image che stanno dentro i .news-item PARI */
+    
+    /*order funziona così: 0 è default, tutto ciò che è >0 sposta avanti, <0 sposta indietro */
+    order:1;
+
+}
+
+
+.news-image {
+    width: 20%;
+}
+
+.news-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.news-text {
+    width: 80%;
+}
