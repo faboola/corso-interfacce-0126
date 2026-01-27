@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduzione a Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="container">   
+
+        <h1>Introduzione a Bootstrap</h1>
+        <p>Bootstrap è un framework CSS open source che facilita la creazione di siti web reattivi e moderni.</p>
+
+        <h2>Righe e colonne</h2>
+        <p>Bootstrap utilizza un sistema di griglia basato su righe e colonne per organizzare il layout delle pagine web.</p>
+
+        <!-- RIGHE E COLONNE SI CREANO CON LE CLASSI .ROW E .COL-* -->
+        <!-- NOTA: LE RIGHE DEVONO ESSERE CONTENUTE IN UN CONTENITORE .CONTAINER O .CONTAINER-FLUID -->
+
+        <div class="row">
+
+            <div class="col-4">COLONNA 1</div>
+            <div class="col-4">COLONNA 2</div>
+            <div class="col-4">COLONNA 3</div>
+
+            <!-- NOTA: per fare colonne tutte uguali, posso anche usare semplicemente la classe .col -->
+        </div>
+
+        <h3>Colonne di dimensione diversa</h3>
+
+        <div class="row">
+            <div class="col-3">COLONNA 1</div>
+            <div class="col-6">COLONNA 2</div>
+            <div class="col-3">COLONNA 3</div>
+        </div>
+
+
+        <h2>Colonne responsive</h2>
+
+        <div class="row">
+            <div class="col-12 col-lg-4 col-xl-6">COLONNA 4 (DESKTOP) e 12 (MOBILE)</div>
+            <div class="col-12 col-lg-8 col-xl-6">COLONNA 8 (DESKTOP) e 12 (MOBILE)</div>
+            <!-- NOTA: posso anche non scrivere la dimensione per il mobile (col-12), in questo caso la colonna occuperà tutto lo spazio disponibile -->
+        </div>
+
+
+    </div> <!--chiudo il container-->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
