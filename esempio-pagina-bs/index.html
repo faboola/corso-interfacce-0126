@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+
+    </head>
+    <body>
+
+        <header id="main-header">
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <!-- se voglio che la navbar sia a tutta larghezza uso .container-fluid -->
+                    <a class="navbar-brand" href="#">
+                        <!-- QUI POSSO METTERE SE VOGLIO IL LOGO DEL SITO -->
+                        <img src="logobrutto.png" alt="Terrazzo Interior Design" width="180">
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <!-- NOTA: ms-auto: margine a sinistra automatico, spinge tutto a destra -->
+                            <!-- NOTA: me-auto: margine a destra automatico, spinge tutto a sinistra -->
+                            <!-- NOTA: mb-2 e mb-lg-0: margine in basso 2 (per dispositivi piccoli) e
+                            margine in basso 0 (per dispositivi grandi) -->
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Info</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <!-- Il sottomenu si fa con un ul dentro un li -->
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main-content">
+
+            <section id="hero" class="d-flex align-items-center" style="height:75vh;">
+                <!-- d-flex e align-items-center: corrispondono a display: flex e align-items:
+                center in CSS -->
+                <div class="container text-center">
+                    <!-- text-center: allinea il testo al centro. Se volessi allinearlo a sinistra
+                    userei text-start, se volessi allinearlo a destra userei text-end -->
+
+                    <h1>Dentro. Fuori. Ovunque.</h1>
+                    <p class="fs-4">Progettiamo interni da 20 anni<br>ma nessuno ci ha ancora spiegato che i terrazzi stanno fuori.</p>
+                    <button type="button" class="btn btn-outline-primary rounded-pill btn-lg" data-bs-toggle="modal" data-bs-target="#ctaModal">Scopri di più</button>
+                    <!-- outline: pulsante senza sfondo. primary: colore primario (di default è blu,
+                    ma si può personalizzare con il file CSS) -->
+                    <!-- rounded-pill: pulsante con bordi arrotondati a forma di pillola -->
+                </div>
+
+            </section>
+
+            <section id="intro">
+                <div class="container">
+                    <div class="row align-items-center mb-5">
+                        <!-- align-items-center: solitamente usata con d-flex per allineare in
+                        verticale, in questo caso con ROW la classe d-flex diventa implicita, perché di
+                        fatto .row è già un elemento flex. mb-5: margine in basso 5 (per distanziare il
+                        blocco successivo) -->
+
+                        <div class="col-lg-4">
+                            <img
+                                class="img-fluid mb-3 mb-lg-0"
+                                src="https://picsum.photos/id/74/600/400"
+                                alt="immagine interni">
+                        </div>
+                        <div class="col-lg-8">
+                            <h2>Ci occupiamo di interni e esterni</h2>
+                            <p>No, non è vero. Facciamo solo gli interni. Ci prendiamo in giro da soli così
+                                non dovete farlo voi. Il nostro nome urla "aperitivo all'aperto", ma disegnamo
+                                solo spazi interni.</p>
+                            <p>Sì, il nostro branding è un terribile disastro. Però i nostri interni non
+                                sono niente male.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Blocco 2 -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-lg-4">
+                            <img
+                                class="img-fluid mb-3 mb-lg-0"
+                                src="https://picsum.photos/id/77/600/400"
+                                alt="immagine interni">
+                        </div>
+                        <div class="col-lg-8">
+                            <h2>Ogni cliente ci chiede la stessa cosa...</h2>
+                            <p>...Ma fate anche terrazzi? No, dannazione. Facciamo solo interior design. Se
+                                vuoi un terrazzo sei nel posto sbagliato.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
+                                ullam hic. Itaque, omnis rerum natus pariatur assumenda possimus voluptas quos?</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="cards" class="py-5 my-5" style="background-color:#a9b9af;">
+
+                <div class="container">
+
+                    <h1>Alcuni dei nostri lavori</h1>
+                    <p class="fs-5">No, per l'ultima volta, non facciamo terrazzi. Se vuoi un
+                        terrazzo, sei nel posto sbagliato.</p>
+
+
+                        <div class="row">
+                            <!-- colonna 1 card -->
+                             
+                            <div class="col-md-6 col-lg-3">
+
+                                <div class="card">
+                                <img  src="https://picsum.photos/id/79/600/400" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                                </div>
+
+                            </div>
+                            <!-- fine colonna 1  -->
+                            <!-- colonna 2 card -->
+
+                            <div class="col-md-6 col-lg-3">
+
+                                <div class="card">
+                                <img  src="https://picsum.photos/id/80/600/400" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                                </div>
+
+                            </div>
+                            <!-- fine colonna 2  -->
+                            <!-- colonna 3 card -->
+
+                            <div class="col-md-6 col-lg-3">
+
+                                <div class="card">
+                                <img  src="https://picsum.photos/id/81/600/400" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                                </div>
+
+                            </div>
+                            <!-- fine colonna 3  -->
+                            <!-- colonna 4 card -->
+
+                            <div class="col-md-6 col-lg-3">
+
+                                <div class="card">
+                                <img  src="https://picsum.photos/id/82/600/400" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                                </div>
+
+                            </div>
+                            <!-- fine colonna 4  -->
+
+
+
+                        </div> <!-- fine row  -->
+
+                </div>
+
+            </section>
+
+            <section id="faq" class="my-5"> <!-- margine sopra+sotto di 5 unità -->
+                <div class="container">
+                    <h1>F.A.Q.</h1>
+                    <p class="fs-5">Domande fastidiose che ci fanno tutti e a cui rispondiamo sempre molto arrabbiati.</p>
+                            
+            <div class="accordion" id="domande">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Ma quindi fate anche i terrazzi veri o no?
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#domande">
+                <div class="accordion-body">
+                    No. Mai fatti, mai faremo. Il nome è un errore storico del 2003 quando il fondatore era convinto che "terrazzo" suonasse figo e internazionale. Adesso siamo bloccati con questo brand assurdo e tremila biglietti da visita già stampati che nessuno vuole buttare via per principio.
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                   Perché dovrei farvi progettare casa mia se non sapete nemmeno nominare l'azienda in modo sensato?
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#domande">
+                <div class="accordion-body">
+                    Ottima domanda. La risposta è che tutta la nostra incapacità di branding l'abbiamo compensata diventando ossessivamente bravi a progettare interni. È una specie di legge del contrappasso: più il nome è idiota, più i divani vengono bene. Non chiedeteci perché, funziona così.
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   3. Posso almeno avere uno sconto se faccio notare l'incongruenza del nome?
+
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#domande">
+                <div class="accordion-body">                              
+                No, perché ci hanno già fatto questa battuta circa 847 volte solo quest'anno. Se vuoi lo sconto devi inventarti una battuta originale sul nostro nome che non abbiamo mai sentito. Spoiler: è impossibile, le abbiamo sentite tutte comprese quelle in dialetto veneto.     
+                </div>
+                </div>
+            </div>
+            </div>
+                            
+                
+                
+                </div>
+            </section>
+
+        </main>
+
+        <footer id="site-footer" class="py-4">
+            <!-- Questo footer ha 3 colonne in linea da desktop e 2 colonne impilate da mobile. La prima colonna contiene dei link, la seconda i contatti dell'azienda, la terza va a capo su mobile e contiene un link ai contatti -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-lg-3">
+                    <div class="fs-5 footer-title fw-bold">Links</div>
+                    <!-- nota: footer-title è una classe mia, non di Bootstrap -->
+                    <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                    </ul>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                    <div class="fs-5 footer-title fw-bold">Info</div>
+                        Terrazzi Interior Design<br>
+                        Via dei Terrazzi 123<br>
+                        00100 Roma<br>
+                        P.IVA 1234567890
+                    </div>
+                    <div class="col-12 col-lg-6 text-center text-lg-start">
+                        <div class="footer-title fw-bold fs-5">Contatti</div>
+                        ...
+                    </div>
+                    <!-- questo blocco ha text-align center su mobile e text-align start (cioè a sinistra) su desktop, per allineare i contatti a sinistra su desktop e al centro su mobile -->
+                </div>
+            </div>
+        </footer>
+
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                               MODAL HERO                                -->
+<!-- ----------------------------------------------------------------------- -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="ctaModal" tabindex="-1" aria-labelledby="ctaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="ctaModalLabel">Super offerta terrazzo in città</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Ci avete creduto, eh? Che facessimo terrazzi? No, non facciamo terrazzi. Se vuoi un terrazzo sei nel posto sbagliato. Ma se vuoi un bellissimo interno, allora sei nel posto giusto!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+    </body>
+</html>
