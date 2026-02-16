@@ -1,0 +1,63 @@
+@import "variables";
+// METODO MODERNO FUORI DA BS: @use "variables" as *;
+//per ora stiamo su @import ma da SASS 2.0 verrà deprecato 
+
+// MIXIN: piccole "funzioni" in SASS. Questo è senza parametri:
+@mixin flex-center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+// Questo è un mixin che supporta due parametri. Passo anche dei valori di default
+@mixin flex($justify:flex-start,$align:stretch) {
+    display: flex;
+    justify-content: $justify; //parametro passato quando richiamiamo il mixin
+    align-items: $align;
+}
+
+body {
+    font-family: $font-family-base;
+}
+
+h1, h2 {
+    font-family: $headings-font-family;
+}
+
+a {
+    color: $primary;
+}
+
+.main-nav {
+    width:100%;
+    margin:0;
+
+    .main-menu {
+        display: flex;
+        gap: 1rem;
+    }
+
+    a {
+        color:$primary;
+        font-weight: bold;
+    }
+
+}
+
+.my-div {
+    //@include flex-center();
+    @include flex(center,center) //includo il mixin "FLEX" passando due parametri
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   COLORI                                   */
+/* -------------------------------------------------------------------------- */
+
+.my-div {
+    background-color: $primary;
+//background-color: lighten($primary,25%);
+  //  background-color: darken($primary,5%);
+    // background-color: desaturate($primary,100%);
+   // background-color: tranparentize($primary,0.7); //rende trasparente
+}
