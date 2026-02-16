@@ -75,5 +75,34 @@ $h1-font-size: 2.5rem;
 /*                               SPAZI E MARGINI                              */
 /* -------------------------------------------------------------------------- */
 
-$spacer : 1rem //unità base di default. usato come gap e base per margini nelle classi tipo m- p- per margini e padding. 
+$spacer : 1rem; //unità base di default. usato come gap e base per margini nelle classi tipo m- p- per margini e padding. 
 
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 BREAKPOINTS                                */
+/* -------------------------------------------------------------------------- */
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+  //posso anche aggiungere dei breakpoint più grandi
+  //xxxl : 1600px
+);
+
+//Se aggiungo dei breakpoint e li modifico, posso anche modificare le ampiezze dei CONTAINER:
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+  //anche qui posso aggiungere:
+  //xxxl : 1580px
+//   NOTA: ogni breakpoint dovrebbe avere il suo .container corrispondente
+);

@@ -1,0 +1,55 @@
+/* -------------------------------------------------------------------------- */
+/*                         I MIEI STILI PERSONALIZZATI                        */
+/* -------------------------------------------------------------------------- */
+
+#main-header {
+    background-color: $indigo-200;
+    
+    //NOTA: posso usare qui tutte le variabili BS perché le sto includendo col mio SCSS
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                         MIXINS PER LE MEDIA QUERIES                        */
+/* -------------------------------------------------------------------------- */
+
+
+//questo mixin di BS crea una media query da min-width:992px (che è il breakpoint di lg, large)
+// @include media-breakpoint-up(lg) { }
+
+//POSSO USARLO COSI DENTRO I BLOCCHI DI CODICE 
+
+#main-header {
+    background-color: $indigo-200;
+
+    //POSSO SCRIVERE LE MEDIA QUERIES CON I MIXIN DI BS COSI
+    @include media-breakpoint-up(md) { 
+        background-color: $pink;
+      }
+
+      @include media-breakpoint-up(xl) {
+        background-color: $purple;
+      }
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*       CREARE CLASSI SEMANTICHE E ASSEGNARE ROW E COLUMNS CON I MIXIN       */
+/* -------------------------------------------------------------------------- */
+
+//MIXIN PER CREARE LE ROW
+.offerte-contenitore {
+    @include make-row(); //crea gli stili per .row
+}
+
+.offerta {
+    @include make-col-ready(); //stili base colonn
+    @include make-col(); //crea una colonna .col
+
+    //per renderla responsive aggiungo una media query con il mixin:
+
+    @include media-breakpoint-up(lg) { //da breakpoint LG in su...
+        @include make-col(4); //fai colonne da 4 / 12
+      }
+}
+
